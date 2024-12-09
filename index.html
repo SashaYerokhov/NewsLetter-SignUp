@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <section class="card">
+    <div class="card__bacis">
+      <article class="card__content">
+        <h2 class="content__title roboto-bold">Stay updated!</h2>
+        <p class="content__text roboto-regular">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="content__list">
+          <li class="content__item roboto-regular">Product discovery and building what matters</li>
+          <li class="content__item roboto-regular">Measuring to ensure updates are a success</li>
+          <li class="content__item roboto-regular">And much more!</li>
+        </ul>
+        <form action="#">
+          <div class="input-group">
+            <label for="email" class="roboto-bold">Email address</label>
+            <p class="error-email roboto-bold" id="error-email"></p>
+            <input type="email" class="roboto-regular" name="email" id="email-input" placeholder="email@company.com"
+              required>
+          </div>
+          <button type="submit" class="btn roboto-bold" id="email-btn">Subscribe to monthly newsletter</button>
+        </form>
+      </article>
+      <article class="card__images">
+        <picture>
+          <source srcset="./assets/images/illustration-sign-up-mobile.svg" alt="illustration sign up mobile"
+            media="(max-width: 600px)">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration sign up desktop">
+        </picture>
+      </article>
+    </div>
+    <article class="card__success hidden">
+      <img src="./assets/images/icon-success.svg" alt="icon success">
+      <h4 class="success__title roboto-bold">Thanks for subscribing!</h4>
+      <p class="success__text roboto-regular">A confirmation email has been sent to <span id="rate"      class="roboto-bold">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your
+        subscription</p>
+      <button class="msg btn roboto-bold">Dismiss message</button>
+    </article>
+  </section>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Sasha Yerokhov</a>.
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
