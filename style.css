@@ -233,6 +233,7 @@ button:hover {
     .card__bacis {
         min-height: 52.625rem;
         grid-template-columns: 375px;
+        margin: 0;
     }
 
     .card__content {
