@@ -149,7 +149,6 @@ li {
   color: var(--tomato);
   display: inline-block;
   margin-left: 155px;
-  /* скрыли сообщение об ошибке */
   opacity: 0;
 }
 
@@ -171,7 +170,6 @@ li {
   color: var(--grey);
 }
 
-/* Active form */
 .form__input:focus,
 .valid .form__input {
   outline: none;
@@ -187,7 +185,6 @@ li {
   color: var(--dark-slate-grey);
 }
 
-/* Invali field color */
 .invalid .form__input {
   background-color: var(--bg-input);
   border-color: var(--tomato);
@@ -196,7 +193,6 @@ li {
   color: var(--tomato);
 }
 
-/* когда ошибка сообщение показано */
 .invalid .error-email {
   opacity: 1;
 }
